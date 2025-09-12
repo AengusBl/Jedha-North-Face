@@ -4,9 +4,9 @@ from random import sample
 def find_similar_items():
     def check_id(user_input):
         try:
-            product_id = int(user_input)
-            assert 1 <= product_id <= 500
-            return product_id
+            item_id = int(user_input)
+            assert 1 <= item_id <= 500
+            return item_id
         except Exception as e:
             print("There seems to be something wrong with the input. Make sure you are inputting a whole number between 1 and 500.")
             return check_id(input("Try again: "))
