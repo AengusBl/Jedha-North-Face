@@ -7,7 +7,7 @@ def find_similar_items():
             item_id = int(user_input)
             assert 1 <= item_id <= 500
             return item_id
-        except Exception as e:
+        except:
             print("There seems to be something wrong with the input. Make sure you are inputting a whole number between 1 and 500.")
             return check_id(input("Try again: "))
     
